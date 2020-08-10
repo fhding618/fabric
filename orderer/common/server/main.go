@@ -77,6 +77,7 @@ func Main() {
 		return
 	}
 
+	// 读取配置文件 /etc/hyperledger/fabric/orderer.yaml
 	conf, err := localconfig.Load()
 	if err != nil {
 		logger.Error("failed to parse config: ", err)
